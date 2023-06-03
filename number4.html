@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+let name = prompt("Enter your name:");
+
+let nameLength = name.length;
+
+let lowercaseCount = 0;
+let uppercaseCount = 0;
+
+for (let i = 0; i < nameLength; i++) {
+  let letter = name.charAt(i);
+  if (letter >= "a" && letter <= "z") {
+    lowercaseCount++;
+  } else if (letter >= "A" && letter <= "Z") {
+    uppercaseCount++;
+  }
+}
+
+console.log("Name: " + name);
+console.log("Length of name: " + nameLength);
+console.log("Number of lowercase letters: " + lowercaseCount);
+console.log("Number of uppercase letters: " + uppercaseCount);
+    </script>
+</body>
+</html>
